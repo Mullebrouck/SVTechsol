@@ -1,0 +1,109 @@
+/* add different font-families */
+body {
+	font-family: Avenir Next;
+}
+
+.wrapper {
+	background-color: #F0FAFA;
+}
+
+.header-main-navigation{
+}
+
+.curved-header {
+	position: relative;
+}
+
+.techsol-logo {
+	left: 50px;
+ 	position: absolute;
+    top: 24px;
+}
+
+.main-navigation {
+	position: absolute;
+	right: 50px;
+    top: 28px;
+}
+
+.nav-list {
+	list-style-type: none;
+}
+
+.horizontal-nav {
+	display: inline-block;
+}
+
+.nav-link {
+	color: #F0FAFA;
+	font-size: 20px;
+	font-weight: 500;
+	padding: 15px;
+	text-decoration: none;
+	text-shadow: 3px 3px 4px #000000;
+}
+
+.footer-main-information {
+
+}
+
+.curved-footer {
+	position: relative;
+}
+
+.footer-information {
+	align-items: flex-end;
+	bottom: 70px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	position: absolute;
+	left: 50px;
+	width: 950px;
+	
+}
+
+.footer-logos, .footer-styles, .footer-links {
+	flex: 0 1 auto;
+}
+
+.footer-styles {
+	color: #F0FAFA;
+	font-size: 14px;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+.footer-links {
+
+}
+
+.footer-list {
+	list-style-type: none;
+	padding: 0;
+}
+
+.footer-nav {
+	display: inline-block;
+}
+
+.footer-styles.contact {
+	padding-right: 10px;
+}
+
+.footer-styles.terms-of-use {
+	padding-left: 10px;
+}
+
+.footer-logos {
+}
+
+.ce-logo {
+	padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+.ul-logo {
+    padding-bottom: 1px;
+}
+
