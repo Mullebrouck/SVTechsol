@@ -1,29 +1,41 @@
-/* add different font-families */
 body {
-	font-family: Avenir Next;
-}
-
-.wrapper {
+	font-family: Avenir Next, sans-serif;
 	background-color: #F0FAFA;
+	margin: 0;
 }
 
-.header-main-navigation{
+#wrapper {
+	background-color: #F0FAFA;
+	margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
+
+/* HEADER - Information */
 
 .curved-header {
-	position: relative;
+	position: fixed;
+}
+
+.header-main-navigation {
+	height: 190px;
+	position: fixed;
+	width: 100%;
+	z-index: 999;
 }
 
 .techsol-logo {
 	left: 50px;
  	position: absolute;
-    top: 24px;
+    top: 15px;
 }
+
+/* Main Navigation Menu */
 
 .main-navigation {
 	position: absolute;
 	right: 50px;
-    top: 28px;
+    top: 21px;
 }
 
 .nav-list {
@@ -43,67 +55,687 @@ body {
 	text-shadow: 3px 3px 4px #000000;
 }
 
-.footer-main-information {
-
+.nav-link:hover {
+	text-decoration: underline;
 }
 
-.curved-footer {
-	position: relative;
+/* MAIN Height Pages */
+
+.main-contact-submit {
+	height: 500px;
 }
 
-.footer-information {
-	align-items: flex-end;
-	bottom: 70px;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+.main-employment, 
+.main-services-modeling {
+	height: 750px;
+}
+
+.main-services-manufacturing {
+	height: 900px;
+}
+
+.main-services-differential {
+	height: 1000px;
+}
+
+.main-solutions-capabilities {
+	height: 1100px; 
+}
+
+.main-homepage, 
+.main-company{
+	height: 1115px;
+}
+
+.main-services-testing {
+	height: 1200px;
+}
+
+.main-solutions, 
+.main-services {
+	height: 1300px
+}
+
+.main-products, 
+.main-contact, 
+.main-solutions {
+	height: 1400px;
+}
+
+.main-products-chambers {
+	height: 1800px;
+}
+
+.main-products-fans {
+	height: 2300px
+}
+
+.main-solutions-quality {
+	height: 2550px;
+}
+
+.main-services-engineering {
+ 	height: 2650px;
+}
+
+.main-products-other {
+	height: 4200px;
+}
+
+/* BANNER */
+
+.banner {
+	background-color: #F0FAFA;
+	height: 480px;
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+}
+
+.banner-all-content{
+	margin: 0 auto;
+    position: relative;
+    top: 15px;
+    width: 1024px;
+}
+
+.banner-content-information {
+	display: none;
+}
+
+.banner-content-information.filterFans {
+	display: block;
+}
+
+.banner-picture {
 	position: absolute;
-	left: 50px;
-	width: 950px;
-	
+    right: 0px;
+    top: 128px;
 }
 
-.footer-logos, .footer-styles, .footer-links {
-	flex: 0 1 auto;
+.banner-information {
+	color: #5B5B5B;
+	font-family: Avenir Next, sans-serif;
+	left: 0px;  
+    width: 1024px;
+    margin: 0 auto;
+	position: absolute;
+	top: 145px;
 }
 
-.footer-styles {
+.banner-information.large {
+	top: 135px;
+}
+
+.banner-description {
+	margin-bottom: 25px;
+	width: 500px;
+}
+
+.banner-button {
+	background: #7E7F7F;
+	border: 3px solid #7E7F7F;
+	border-radius: 6px 6px 6px 6px;
+	box-shadow: 0px 3px 5px 0px #5B5B5B;
 	color: #F0FAFA;
+	font-family: AvenirNext, sans-serif;
 	font-size: 14px;
-	font-weight: 500;
+	padding: 3px 10px;
+	text-decoration: none;
+	transition: all 0.8s ease;
+	width: 90px;
+}
+
+.banner-button:hover {
+	background: #5B5B5B;
+	border: 3px solid #5B5B5B;
+	border-radius: 6px 6px 6px 6px;
+	box-shadow: 0px 3px 5px 0px #5B5B5B;
+	color: #F0FAFA;
+	font-family: AvenirNext, sans-serif;
+	font-size: 14px;
+	padding: 3px 10px;
+	text-decoration: none;
+	width: 90px;
+}
+
+.banner-navigation {
+	position: relative;
+    top: 25px;
+}
+
+.banner-subnavigation-button {
+	background: #F0FAFA;
+	border: 3px solid #5B5B5B;
+	border-radius: 6px 6px 6px 6px;
+	box-shadow: 0px 3px 5px 0px #231F20;
+	color: #5B5B5B;
+	font-family: AvenirNext, sans-serif;
+	font-weight: 600;
+	font-size: 18px;
+    padding: 10px 15px;
+    transition: all 0.8s ease;
+}
+
+.banner-subnavigation-button.select, .banner-subnavigation-button:hover {
+	background: #5B5B5B;
+	border: 3px solid #5B5B5B;
+	border-radius: 6px 6px 6px 6px;
+	box-shadow: 0px 3px 5px 0px #231F20;
+	color: #F0FAFA;
+	font-family: AvenirNext, sans-serif;
+	font-weight: 600;
+	font-size: 18px;
+    padding: 10px 15px;
+}
+
+.subnavigation {
+	position: relative;
+    top: 336px;
+}
+
+.subnavigation.place {
+	top: 335px;
+}
+
+.subnavigation-links {
+	list-style-type: none;
+	padding-left: 0;
+	text-align: center;
+}
+
+.subnavigation-buttons {
+	display: inline-block;
+ 	margin: 14px 10px;
+}
+
+/* Body Homepage*/
+
+.click-info {
+	position: absolute;
+}
+
+.click-info.click-margin {
+	margin: 15px 0;
+}
+
+.click-here-button {
+	position: relative;
+    top: 3px;
+}
+
+.click-here-info-block {
+	color: #7E7F7F;
 	text-decoration: none;
 }
 
-.footer-links {
-
-}
-
-.footer-list {
-	list-style-type: none;
-	padding: 0;
-}
-
-.footer-nav {
+.click-here-info {
 	display: inline-block;
+	margin: 0;
+	padding-left: 3px;
 }
 
-.footer-styles.contact {
-	padding-right: 10px;
+.click-here-info:hover {
+	color: #5B5B5B;
+	transition: all 0.8s ease;
 }
 
-.footer-styles.terms-of-use {
-	padding-left: 10px;
+.header-main-navigation.back {
+	background-color: #F0FAFA;
+}
+
+.body-information {
+	color: #5B5B5B;
+	font-family: Avenir Next, sans-serif;
+	margin: 0 auto;
+	position: relative;
+	top: 450px;
+	width: 1024px;
+}
+
+.body-information.no-banner {
+	top: 190px;
+}
+
+.box-two-column {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+}
+
+.body-box {
+	margin: 25px 0;
+	flex: 1 1 50%;
+}
+
+.body-box.left-box {
+	margin-right: 20px;
+}
+
+.body-box.right-box {
+	margin-left: 20px;
+}
+
+.box-information {
+	margin: 0 0 24px 0;
+}
+
+/* BODY Product Page */
+
+.table {
+	border: 3px solid #5B5B5B;
+    font-family: Avenir, sans-serif;
+    font-size: 16px;
+}
+
+.table-product {
+	margin: 0 40px;
+}
+
+.title-table.del-margin {
+	margin-top: 0;
+}
+
+.text-links {
+	color: #5B5B5B;
+	font-weight: bold;
+	transition: all 0.8s ease;	
+}
+
+.text-links:hover {
+	color: #7E7F7F
+}
+
+/* BODY Solutions Page*/
+
+.centered-list.solutions {
+    left: 150px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.body-title.solutions {
+	text-align: center;
+}
+
+.body-services-information.solutions-information {
+	margin-bottom: 50px;
+}
+
+/* BODY Services Page */
+
+.body-title.services {
+	font-size: 40px;
+	text-align: center;
+}
+
+.services-links {
+	color: #5B5B5B;
+	text-decoration: none;
+	transition: all 0.8s ease;
+}
+
+.services-links:hover {
+	color: #7E7F7F;
+}
+
+.body-box.top {
+	margin-bottom: 30px;
+	margin-top: 0;
+}
+
+.box-information.services {
+	margin: 0;
+}
+
+.list-spacing {
+	margin: 25px 0;
+}
+/* BODY Service Sub Pages */
+.services-navigation {
+	position: relative;
+    bottom: 160px;
+}
+
+.banner-line {
+	height: 8px;
+	position: relative;
+	top: 382px;
+  	width: 100%;
+}
+
+.line-dark {
+	background: #5B5B5B;
+}
+
+.line-light {
+	background: #7E7F7F;
+}
+
+.subnav-link {
+	text-decoration: none;
+}
+
+.subnav-button {
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0px 3px 5px 0px #7E7F7F;
+    color: #5B5B5B;
+    font-family: AvenirNext, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: all 0.8s ease;
+}
+
+.subnav-button.light {
+	background: #F0FAFA;
+	border: 3px solid #7E7F7F;
+}
+
+.subnav-button.light:hover, .subnav-select {
+	background: #7E7F7F;
+    border: 3px solid #7E7F7F;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0px 3px 5px 0px #7E7F7F;
+    color: #F0FAFA;
+    font-family: AvenirNext, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.centered-list {
+	margin: 0 140px;
+}
+
+/* BODY Engineering Page */
+
+.engineering-layout {
+	margin-left: 80px;
+}
+
+.engineering.margin {
+	padding: 20px 0;
+}
+
+
+/* BODY Manufacturing Page */
+
+.body-title.services.titles {
+	margin-top: 50px;
+}
+
+.manufacturing-list {
+	margin-top: -25px;
+    padding: 0 140px;
+}
+
+.manufacturing-list-elements {
+	margin-left: 118px;
+}
+
+/* BODY Testing */
+
+.test-list {
+	padding: 0 118px;
+}
+
+.centered-list.testing {
+    position: relative;
+    left: 90px;
+}
+
+/* BODY Company Page */
+
+.company-img {
+	border-radius: 10px;
+	display: block;
+	margin: 0px auto;
+}
+
+.company-information {
+	margin: 20px 0;
+}
+
+.company-information.top {
+	margin-top: 60px;
+}
+
+/* BODY Differential Page*/
+
+
+/* BODY Contact Page */
+
+.contact-information {
+	list-style-type: none;
+	padding-left: 0;
+	text-align: center;
+}
+
+.form-info {
+	margin: 10px 170px;
+    text-align: center;
+}
+
+.form-input  {
+    display: block;
+    background: #CDE2E2;
+    border: 2px solid #6D6963;
+    border-radius: 6px;
+    margin: 8px 0;
+    width: 100%;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    line-height: 18px;
+    font-family: "Avenir Next", sans-serif;
+    font-weight: 500;
+    padding-left: 5px;
+    font-size: 13px;
+    color: #6D6963;
+}
+
+.form-label {
+    font-weight: 500;
+    font-size: 16px;
+    font-family: "Avenir Next", sans-serif;
+}
+
+.form {
+    margin: 0 190px;
+}
+
+.form-button {
+	margin-top: 10px;
+}
+
+.button-form-home {
+	padding-top: 20px;
+	text-align: center;
+}
+
+/* TABLES */
+
+.table {
+	border: 3px solid #5B5B5B;
+    font-family: Avenir, sans-serif;
+    font-size: 16px;
+}
+
+.table-product {
+	margin: 0 40px;
+}
+
+.table-cleanroom {
+	margin: 0 95px;
+}
+
+.table-federal {
+    margin: 10px 0px;
+}
+
+.title-table {
+	padding: 25px 0 0;
+    text-align: center;
+    margin-top: 65px;
+}
+
+.table-header {
+	padding: 5px;
+	border: 2px solid #5B5B5B;
+	border-collapse: collapse;
+}
+
+.table-header.top{ 
+	padding: 12px 18px;
+}
+
+.iso {
+	background-color: #5B5B5B;
+	color: #F0FAFA;
+}
+
+.particle {
+	background-color: #7E7F7F;
+	border: 2px solid #5B5B5B;
+	color: #F0FAFA;
+}
+
+.filled {
+	background-color: #ECECEC;
+}
+
+.table-legend {
+	list-style-type: square;
+	margin: 15px 18px;
+}
+
+/* FOOTER */
+.footer-main-information {
+	position: relative;
+}
+
+.employment {
+	font-weight: bold;
+	font-style: italic;
+	text-align: center
+}
+
+/* Footer Information */
+.footer-information {
+	bottom: 100px;
+	position: relative;
+}
+
+.info-placement {
+	color: #F0FAFA;
+	margin: 38px 60px;
+}
+
+.footer-links {
+	text-decoration: none;
+    color: #F0FAFA;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.footer-links:hover {
+	text-decoration: underline;
+}
+
+.footer-styles {
+	top: 82px;
+	color: #F0FAFA;
+	font-size: 14px;
+	font-weight: 500;
+	left: 44%;
+	position: absolute;
 }
 
 .footer-logos {
-}
-
-.ce-logo {
-	padding-bottom: 10px;
-    padding-right: 10px;
+	bottom: 90px;
+	position: absolute;
+    right: 50px;
 }
 
 .ul-logo {
-    padding-bottom: 1px;
+	margin-right: 20px;
+    margin-left: 20px;
 }
 
+/* Terms of Use - Modal */
+.terms-of-use {
+	color: #F0FAFA;
+	font-size: 14px;
+	font-weight: 500;
+	margin-left: 6px;
+	text-decoration: none;
+}
+
+.terms-of-use:hover {
+	text-decoration: underline;
+}
+
+.modal-terms-of-use {
+	background: rgba(109,105,99,0.8);
+	bottom: 0;
+	color: #5B5B5B;
+	font-family: Avenir, sans-serif;
+	left: 0;
+	opacity:0;
+	pointer-events: none;
+	position: fixed;
+	right: 0;
+    top: 0;
+    z-index: 99999;
+}
+
+.modal-terms-of-use:target {
+    opacity:1;
+    pointer-events: auto;
+    transition: opacity 400ms ease-in;
+}
+
+.content-terms-of-use {
+ 	background: #F0FAFA;
+ 	border-radius: 10px;
+ 	margin: 4% auto;
+ 	padding: 5px 20px 13px 20px;
+    position: relative;
+    width: 775px;
+}
+
+.closing-tag-terms-of-use {
+	color: #5B5B5B;
+	font-family: ArialRoundedMTBold, Avenir, sans-serif;
+	font-size: 20px;
+    opacity: 1;
+    position: absolute;
+    right: 13px;
+    text-decoration: none;
+    top: 5px;
+    transition: opacity 400ms ease-in;
+}
+
+.closing-tag-terms-of-use:hover {
+	opacity: 0.5;
+}
+
+.header-terms-of-use {
+	margin-bottom: 15px;
+	margin-top: 25px;
+	text-align: center;
+}
+
+.titles-terms-of-use {
+	margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.terms-of-use-font {
+	font-size: 10px;
+}
+
+
+/* TEST CSS */
