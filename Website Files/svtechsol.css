@@ -746,6 +746,32 @@ body {
 	font-size: 10px;
 }
 
+@media only screen and (max-width: 1330px) {
+	.banner-description {
+		font-size: 14px;
+	}
+
+	.mobile-center {
+		font-size: 22px;
+	}
+
+	.banner-information {
+		top: 170px;
+	}
+
+	.banner-information.large {
+		top: 156px;
+	}
+
+	.banner-subnavigation-button,
+	.banner-subnavigation-button:hover, 
+	.subnav-button.light:hover,
+	.subnav-button, 
+	.subnav-button:hover, 
+	.subnav-select {
+		font-size: 15px;
+	}
+}
 
 @media only screen and (max-width: 768px) {
 
