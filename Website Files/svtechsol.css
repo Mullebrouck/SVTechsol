@@ -96,7 +96,8 @@ body {
 }
 
 .main-solutions, 
-.main-services {
+.main-services, 
+.main-news {
 	height: 1300px
 }
 
