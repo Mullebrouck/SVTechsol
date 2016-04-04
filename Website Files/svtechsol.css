@@ -13,8 +13,12 @@ body {
 
 /* HEADER - Information */
 
-.curved-header {
+.header-image {
 	position: fixed;
+}
+
+.header-image-small {
+	display: none;
 }
 
 .header-main-navigation {
@@ -318,6 +322,10 @@ body {
 
 .box-information {
 	margin: 0 0 24px 0;
+}
+
+.news-links {
+	color: #16A3AF;
 }
 
 /* BODY Product Page */
@@ -738,4 +746,58 @@ body {
 }
 
 
-/* TEST CSS */
+@media only screen and (max-width: 768px) {
+
+	.header-image {
+		display: none;
+	}
+
+	.header-image-small {
+		display: block;
+		position: absolute;
+		top: -2px;
+	}
+
+	.techsol-logo {
+		height: 25%;
+		left: 0.9375em;
+		top: 0.75em;
+		width: 30%;
+	}
+
+	.main-navigation {
+		display: none;
+	}
+
+	.mobile-menu {
+		position: absolute;
+		right: 1.938em;
+		top: 1.75em;
+	}
+
+	.banner-all-content {
+		position: absolute;
+		width: 100%;
+	}
+
+	.banner-information {
+		width: 100%;
+	}
+
+	.banner-information.large {
+		top: 88px;
+		margin: 0 0.9375em ;
+	}
+
+	.mobile-center {
+		font-size: 20px;
+		position: relative;
+		text-align: center;
+	}
+
+	.banner-description {
+		width: 100%;
+	}
+
+}
+
