@@ -73,11 +73,43 @@
                         </p>
                     </div>
                 </div>
-
+                <div class="box-two-column">
+                    <div class="body-box top">
+                      <button
+                           class="control prev" onclick="onPrev()">
+                        <
+                      </button>
+                      <button
+                           class="control next"
+                           onclick="onNext()">
+                        >
+                      </button>
+                      <div class="gallery-container">
+                        <div class="viewport">
+                          <img class="gallery-image" width="400" height="400" src="images/images/techsol1.png" style="margin-left: 200px;" />
+                          <img class="gallery-image" style="display: none;" width="400" height="400" src="images/images/techsol2.png" />
+                          <img class="gallery-image" style="display: none;" width="400" height="400" src="images/images/techsol3.png" />
+                          <img class="gallery-image" style="display: none;" width="400" height="400" src="images/images/techsol5.png" />
+                          <img class="gallery-image" style="display: none;" width="400" height="400" src="images/images/techsol12.png" />
+                          <img class="gallery-image" style="display: none;" width="400" height="400" src="images/images/techsol14.png" />
+                        </div>
+                        <div class="thumbnails">
+                          <img onclick="onPick(0)" width="65" height="65" src="images/images/techsol1-thumb.png" />
+                          <img onclick="onPick(1)" width="65" height="65" src="images/images/techsol2-thumb.png" />
+                          <img onclick="onPick(2)" width="65" height="65" src="images/images/techsol3-thumb.png" />
+                          <img onclick="onPick(3)" width="65" height="65" src="images/images/techsol5-thumb.png" />
+                          <img onclick="onPick(4)" width="65" height="65" src="images/images/techsol12-thumb.png" />
+                          <img onclick="onPick(5)" width="65" height="65" src="images/images/techsol14-thumb.png" />
+                        </div>
+                      </div>
+                    </div>
+                </div>
                 <div class="box-two-column">
                     <div class="body-box top">
 
                         <div class="engineering">
+                          <br />
+                          <br />
                             <h2 class="services-subtitles">The following list is a few examples of specifications that can be designed into a filter fan module:</h2>
                             <ul>
                                 <li class="list-spacing"><strong>Numerous types of motors/blowers are available to meet pressure, vibration, velocity, voltage and acoustic requirements.</strong></li>
@@ -86,7 +118,7 @@
                             </ul>
 
                             <table class="table table-product">
-                                <tr> 
+                                <tr>
                                     <th class="table-header top particle">Filter Type</th>
                                     <th class="table-header top particle">Efficiency E &#40; &#37; &#41;</th>
                                 </tr>
@@ -101,23 +133,23 @@
                                 <tr>
                                     <td class="table-header filled">H 12</td>
                                     <td class="table-header">99.5 &#64; 0.3 &micro;</td>
-                                </tr> 
+                                </tr>
                                 <tr>
                                     <td class="table-header filled">H 13</td>
                                     <td class="table-header">99.95 &#64; 0.3 &micro;</td>
-                                </tr> 
+                                </tr>
                                 <tr>
                                     <td class="table-header filled">H 14</td>
                                     <td class="table-header">99.995 &#64; 0.3 &micro;</td>
-                                </tr> 
+                                </tr>
                                 <tr>
                                     <td class="table-header filled">U 15</td>
                                     <td class="table-header">99.9995 &#64; 0.3 mpps</td>
-                                </tr> 
+                                </tr>
                                 <tr>
                                     <td class="table-header filled">U 16</td>
                                     <td class="table-header">99.99995 &#64; 0.3 mpps</td>
-                                </tr>  
+                                </tr>
                                 <tr>
                                     <td class="table-header filled">U 17</td>
                                     <td class="table-header">99.999995 &#64; 0.3 mpps</td>
@@ -125,7 +157,7 @@
                                 <tr>
                                     <td class="table-header filled">AMC</td>
                                     <td class="table-header">Various types of AMC filters are offered based in different airborne contaminants.</td>
-                                </tr>                           
+                                </tr>
                             </table>
                             <ul class="table-legend">
                                 <li>E &#45; Percentage of restrained particles under defined conditiomns</li>
@@ -233,7 +265,7 @@
                     <img class="ul-logo" src="images/logos/UL_Listed-Logo.png" alt="Compliant with UL" height="46" width="35">
                 </div>
 
-            </div> 
+            </div>
         </footer>
 
     </div>
@@ -245,10 +277,10 @@
             var cmProducts = document.querySelector('.banner-content-information.cmProducts');
             var otherProducts = document.querySelector('.banner-content-information.otherProducts');
             var buttons = {
-                filterFans: filterFans, 
-                chambers: chambers, 
-                temperature: temperature, 
-                cmProducts: cmProducts, 
+                filterFans: filterFans,
+                chambers: chambers,
+                temperature: temperature,
+                cmProducts: cmProducts,
                 otherProducts: otherProducts,
             };
             function displayMenu (name) {
@@ -258,6 +290,31 @@
                 cmProducts.style.display = "none";
                 otherProducts.style.display = "none";
                 buttons[name].style.display = "block";
+            }
+        </script>
+        <script>
+            var i = 0
+            var imgs = document.querySelectorAll('.viewport > img')
+
+            function onPrev () {
+              imgs[i].style.display = 'none'
+              i = i - 1 >= 0 ? i - 1 : imgs.length - 1
+              imgs[i].style.display = 'block'
+            }
+
+            function onNext () {
+              imgs[i].style.display = 'none'
+              i = i + 1 >= imgs.length - 1 ? 0 : i + 1
+              imgs[i].style.display = 'block'
+
+            }
+
+            function onPick (index) {
+              Array.prototype.forEach.call(imgs, img => {
+                img.style.display = 'none'
+              })
+              i = index
+              imgs[i].style.display = 'block'
             }
         </script>
 </body>

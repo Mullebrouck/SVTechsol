@@ -1,11 +1,11 @@
 body {
 	font-family: Avenir Next, sans-serif;
-	background-color: #F0FAFA;
+	background-color: #FFFFFF;
 	margin: 0;
 }
 
 #wrapper {
-	background-color: #F0FAFA;
+	background-color: #FFFFFF;
 	margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -51,7 +51,7 @@ body {
 }
 
 .nav-link {
-	color: #F0FAFA;
+	color: #FFFFFF;
 	font-size: 20px;
 	font-weight: 500;
 	padding: 15px;
@@ -69,7 +69,7 @@ body {
 	height: 500px;
 }
 
-.main-employment, 
+.main-employment,
 .main-services-modeling {
 	height: 750px;
 }
@@ -83,10 +83,10 @@ body {
 }
 
 .main-solutions-capabilities {
-	height: 1100px; 
+	height: 1100px;
 }
 
-.main-homepage, 
+.main-homepage,
 .main-company{
 	height: 1115px;
 }
@@ -95,24 +95,24 @@ body {
 	height: 1200px;
 }
 
-.main-solutions, 
-.main-services, 
+.main-solutions,
+.main-services,
 .main-news {
 	height: 1300px
 }
 
-.main-products, 
-.main-contact, 
+.main-products,
+.main-contact,
 .main-solutions {
 	height: 1400px;
 }
 
 .main-products-chambers {
-	height: 1800px;
+	height: 2300px;
 }
 
 .main-products-fans {
-	height: 2300px
+	height: 2700px
 }
 
 .main-solutions-quality {
@@ -124,13 +124,13 @@ body {
 }
 
 .main-products-other {
-	height: 4200px;
+	height: 4700px;
 }
 
 /* BANNER */
 
 .banner {
-	background-color: #F0FAFA;
+	background-color: #FFFFFF;
 	height: 480px;
     position: fixed;
     width: 100%;
@@ -161,7 +161,7 @@ body {
 .banner-information {
 	color: #5B5B5B;
 	font-family: Avenir Next, sans-serif;
-	left: 0px;  
+	left: 0px;
     width: 1024px;
     margin: 0 auto;
 	position: absolute;
@@ -182,7 +182,7 @@ body {
 	border: 3px solid #7E7F7F;
 	border-radius: 6px 6px 6px 6px;
 	box-shadow: 0px 3px 5px 0px #5B5B5B;
-	color: #F0FAFA;
+	color: #FFFFFF;
 	font-family: AvenirNext, sans-serif;
 	font-size: 14px;
 	padding: 3px 10px;
@@ -196,7 +196,7 @@ body {
 	border: 3px solid #5B5B5B;
 	border-radius: 6px 6px 6px 6px;
 	box-shadow: 0px 3px 5px 0px #5B5B5B;
-	color: #F0FAFA;
+	color: #FFFFFF;
 	font-family: AvenirNext, sans-serif;
 	font-size: 14px;
 	padding: 3px 10px;
@@ -210,7 +210,7 @@ body {
 }
 
 .banner-subnavigation-button {
-	background: #F0FAFA;
+	background: #FFFFFF;
 	border: 3px solid #5B5B5B;
 	border-radius: 6px 6px 6px 6px;
 	box-shadow: 0px 3px 5px 0px #231F20;
@@ -227,7 +227,7 @@ body {
 	border: 3px solid #5B5B5B;
 	border-radius: 6px 6px 6px 6px;
 	box-shadow: 0px 3px 5px 0px #231F20;
-	color: #F0FAFA;
+	color: #FFFFFF;
 	font-family: AvenirNext, sans-serif;
 	font-weight: 600;
 	font-size: 18px;
@@ -252,6 +252,73 @@ body {
 .subnavigation-buttons {
 	display: inline-block;
  	margin: 14px 10px;
+}
+
+/* Image Gallery */
+.gallery-container {
+	border: 5px solid #5B5B5B;
+	border-radius: 10px;
+  position: relative;
+  height: 450px;
+	margin-left: auto;
+	margin-right: auto;
+  width: 800px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.viewport {
+  height: 300px;
+  overflow: hidden;
+  flex: 0 0 350px;
+}
+
+.gallery-image {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gallery-image.big {
+	margin: 10px auto;
+}
+
+.thumbnails {
+  flex: 0 0 100px;
+  height: 50px;
+  overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.thumbnails img {
+  cursor: pointer;
+  padding: 14px;
+}
+
+.control{
+	cursor: pointer;
+  position: absolute;
+  top: 175px;
+  background-color: #FFFFFF;
+  font-weight: 500;
+  font-size: 45px;
+  padding: 0px 15px;
+  border: 5px solid #5B5B5B;
+  color: #5B5B5B;
+  border-radius: 50px;
+	margin-left: 15px;
+	transition: all 0.8s ease;
+}
+
+.control:hover {
+	background-color: #5B5B5B;
+	color: #FFFFFF;
+}
+
+.next {
+	margin-right: 15px;
+  right: 0;
 }
 
 /* Body Homepage*/
@@ -286,7 +353,7 @@ body {
 }
 
 .header-main-navigation.back {
-	background-color: #F0FAFA;
+	background-color: #FFFFFF;
 }
 
 .body-information {
@@ -348,7 +415,7 @@ body {
 .text-links {
 	color: #5B5B5B;
 	font-weight: bold;
-	transition: all 0.8s ease;	
+	transition: all 0.8s ease;
 }
 
 .text-links:hover {
@@ -438,7 +505,7 @@ body {
 }
 
 .subnav-button.light {
-	background: #F0FAFA;
+	background: #FFFFFF;
 	border: 3px solid #7E7F7F;
 }
 
@@ -447,7 +514,7 @@ body {
     border: 3px solid #7E7F7F;
     border-radius: 6px 6px 6px 6px;
     box-shadow: 0px 3px 5px 0px #7E7F7F;
-    color: #F0FAFA;
+    color: #FFFFFF;
     font-family: AvenirNext, sans-serif;
     font-weight: 600;
     font-size: 18px;
@@ -596,19 +663,19 @@ body {
 	border-collapse: collapse;
 }
 
-.table-header.top{ 
+.table-header.top{
 	padding: 12px 18px;
 }
 
 .iso {
 	background-color: #5B5B5B;
-	color: #F0FAFA;
+	color: #FFFFFF;
 }
 
 .particle {
 	background-color: #7E7F7F;
 	border: 2px solid #5B5B5B;
-	color: #F0FAFA;
+	color: #FFFFFF;
 }
 
 .filled {
@@ -638,13 +705,13 @@ body {
 }
 
 .info-placement {
-	color: #F0FAFA;
+	color: #FFFFFF;
 	margin: 38px 60px;
 }
 
 .footer-links {
 	text-decoration: none;
-    color: #F0FAFA;
+    color: #FFFFFF;
     font-size: 14px;
     font-weight: 500;
 }
@@ -655,7 +722,7 @@ body {
 
 .footer-styles {
 	top: 82px;
-	color: #F0FAFA;
+	color: #FFFFFF;
 	font-size: 14px;
 	font-weight: 500;
 	left: 44%;
@@ -675,7 +742,7 @@ body {
 
 /* Terms of Use - Modal */
 .terms-of-use {
-	color: #F0FAFA;
+	color: #FFFFFF;
 	font-size: 14px;
 	font-weight: 500;
 	margin-left: 6px;
@@ -707,7 +774,7 @@ body {
 }
 
 .content-terms-of-use {
- 	background: #F0FAFA;
+ 	background: #FFFFFF;
  	border-radius: 10px;
  	margin: 4% auto;
  	padding: 5px 20px 13px 20px;
@@ -764,10 +831,10 @@ body {
 	}
 
 	.banner-subnavigation-button,
-	.banner-subnavigation-button:hover, 
+	.banner-subnavigation-button:hover,
 	.subnav-button.light:hover,
-	.subnav-button, 
-	.subnav-button:hover, 
+	.subnav-button,
+	.subnav-button:hover,
 	.subnav-select {
 		font-size: 15px;
 	}
@@ -827,4 +894,3 @@ body {
 	}
 
 }
-
