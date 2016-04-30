@@ -693,6 +693,7 @@ button:focus {
 
 /* FOOTER */
 .footer-main-information {
+	height: 150px;
 	position: relative;
 }
 
@@ -734,9 +735,9 @@ button:focus {
 }
 
 .footer-logos {
-	bottom: 90px;
+	bottom: 30px;
 	position: absolute;
-    right: 50px;
+  right: 50px;
 }
 
 .ul-logo {
