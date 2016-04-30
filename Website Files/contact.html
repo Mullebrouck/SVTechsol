@@ -63,10 +63,10 @@
                             <li>408 379&#45;6833 x11</li>
                         </ul>
                         <br>
-                        <p class="form-info">If you have any questions about SV Techsol products or services, please fill out our information form and one of our solution experts will contact you.</p> 
+                        <p class="form-info">If you have any questions about SV Techsol products or services, please fill out our information form and one of our solution experts will contact you.</p>
                     </div>
                 </div>
-                <form id="gform" class="form" method="POST" action="https://script.google.com/macros/s/AKfycbz8G3sJR4Oo_H0h5crvC9VoGGea9qot4JX8dOYU0N_L_v5YTFic/exec">
+                <form id="gform" class="form" method="POST" action="https://formspree.io/kaatmullebrouck@hotmail.com">
                     <label class="form-label" for="myName">Name*</label>
                     <input class="form-input" type="text" name="myName" id="myName" required="required">
                     <label class="form-label" for="myCompany">Company*</label>
@@ -336,15 +336,15 @@
                     <input class="form-input" type="text" name="mySubject" id="mySubject">
                     <label class="form-label" for="myInformation">More Information*</label>
                     <textarea class="form-input" name="myInformation" id="myinformation" rows="5" cols="20" required="required"></textarea>
-                    <input class="banner-button form-button" type="submit" id="mySubmit" value="Submit" name="submit">
-                </form>            
+                    <input class="banner-button form-button" type="submit" id="mySubmit" value="Send" name="submit">
+                </form>
             </div>
 
             <div style="display:none;" id="thankyou_message" class="body-information no-banner">
                 <div class="box-two-column">
                     <div class="body-box top">
                         <h2 class="body-title services">Thank you!</h2>
-                        <p class="body-title solutions">Your request was submitted successfully. <br> One of our solution experts will be contacting you soon.</p> 
+                        <p class="body-title solutions">Your request was submitted successfully. <br> One of our solution experts will be contacting you soon.</p>
                         <div class="button-form-home">
                             <button class="banner-button button-decoration" onclick="goBack()" target="_top">Go Back</button>
                         </div>
@@ -394,13 +394,10 @@
                     <img class="ul-logo" src="images/logos/UL_Listed-Logo.png" alt="Compliant with UL" height="46" width="35">
                 </div>
 
-            </div> 
+            </div>
         </footer>
 
     </div>
-    <script data-cfasync="false" type="text/javascript"
-        src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js">
-    </script>
     <script>
             // Changing banner
             var filterFans = document.querySelector('.banner-content-information.filterFans');
@@ -409,10 +406,10 @@
             var cmProducts = document.querySelector('.banner-content-information.cmProducts');
             var otherProducts = document.querySelector('.banner-content-information.otherProducts');
             var buttons = {
-                filterFans: filterFans, 
-                chambers: chambers, 
-                temperature: temperature, 
-                cmProducts: cmProducts, 
+                filterFans: filterFans,
+                chambers: chambers,
+                temperature: temperature,
+                cmProducts: cmProducts,
                 otherProducts: otherProducts,
             };
             function displayMenu (name) {
