@@ -4,6 +4,10 @@ body {
 	margin: 0;
 }
 
+button:focus {
+	outline:0;
+}
+
 #wrapper {
 	background-color: #FFFFFF;
 	margin-left: auto;
